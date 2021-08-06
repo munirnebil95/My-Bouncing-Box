@@ -1,0 +1,38 @@
+<html style='background-color: black'>
+  <div id="my_bouncing_box" style= "background-color: blue; border-radius: 3px; position: absolute; left: 0px; top: 0px; min-width: 100px; min-height: 100px; text-align: center; font-weight: bold; color: #999;" >munir_n</div>
+  <script type="text/javascript">
+    var vertical = "down"
+    var horizontal = "right"
+    setInterval(function() {
+    var hello = document.getElementById("my_bouncing_box")
+
+    var left = parseInt(hello.style.left.split("px")[0])
+    var top = parseInt(hello.style.top.split("px")[0])
+    if(vertical == "down") {
+        hello.style.top = top + 5;
+    }
+    if(horizontal == "right") {
+        hello.style.left = left + 5;
+    }
+    if(vertical == "up") {
+        hello.style.top = top - 5;
+    }
+    if(horizontal == "left") {
+        hello.style.left = left - 5;
+    }
+    if(left <= 0) {
+        horizontal = "right";
+    }
+    if(left >= 260) {
+        horizontal = "left";
+    }
+    if(top <= 0) {
+        vertical = "down" 
+    }
+    if(top >= 350) {
+        vertical = "up" 
+    }
+
+      },100)
+  </script>
+</html>
