@@ -1,6 +1,6 @@
 # my_bouncing_box
 •	Tech stack: HTML, CSS & JavaScript
-Description
+
 
 •	Created the classic windows screen saver that has a box continuously bouncing has it reaches the corner of the screen
 
